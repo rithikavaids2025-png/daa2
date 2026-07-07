@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>String Matching Visualizer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+<i class="fa-solid fa-code"></i>
+String Matching Algorithm Visualizer
+</h1>
+
+<p>
+Comparative Analysis of Naive, KMP and Rabin-Karp Algorithms
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Input</h2>
+
+<label>Text</label>
+
+<textarea id="text">AABAACAADAABAABA</textarea>
+
+<label>Pattern</label>
+
+<input
+type="text"
+id="pattern"
+value="AABA">
+
+<button onclick="runAlgorithms()">
+
+<i class="fa-solid fa-play"></i>
+
+Run Algorithms
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Results</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Algorithm</th>
+
+<th>Matches</th>
+
+<th>Comparisons</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Naive</td>
+
+<td id="naiveMatch"></td>
+
+<td id="naiveComp"></td>
+
+</tr>
+
+<tr>
+
+<td>KMP</td>
+
+<td id="kmpMatch"></td>
+
+<td id="kmpComp"></td>
+
+</tr>
+
+<tr>
+
+<td>Rabin-Karp</td>
+
+<td id="rkMatch"></td>
+
+<td id="rkComp"></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+
+Developed for DAA Lab Project © 2026
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
